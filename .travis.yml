@@ -1,0 +1,11 @@
+before_script:
+  - npm start &   # Run the application in the background
+  - sleep 5       # Give it time to start
+
+language: node_js
+node_js:
+  - "10"
+
+  services:
+  - mongodb
+
